@@ -1,6 +1,4 @@
-//module.exports =
-
-function check2(str, bracketsConfig) {
+module.exports =function check(str, bracketsConfig) {
     var stack = [];
     var arrElements = str.split("");
 
@@ -15,14 +13,6 @@ function check2(str, bracketsConfig) {
 
         }
     }
-
     return stack.length === 0;
-
 }
 
-const config3 = [['(', ')'], ['[', ']'], ['{', '}']];
-
-
-//console.log(check('()', config1));
-//console.log(check('((()))()', config1));
-console.log(check2('([{}])', config3));
